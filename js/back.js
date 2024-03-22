@@ -24,12 +24,11 @@ botones.forEach(boton => {
                 pantalla.textContent = eval(pantalla.textContent)
             } catch {
                 pantalla.textContent = "No flashes"
-            }
+            } 
             return
         }
 
-        if (boton.id == "par") {
-            pantalla.textContent += botonApretado
+        if (boton.id == "cero" && pantalla.textContent == "0") {
             return
         }
 
